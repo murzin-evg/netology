@@ -136,6 +136,10 @@ lecturer1.add_courses_attached('Java')
 lecturer2.add_courses_attached('Дизайн')
 lecturer2.add_courses_attached('Системный аналитик')
 
+lecturer3.add_courses_attached('Fullstack Python')
+
+lecturer4.add_courses_attached('Fullstack Python')
+
 reviewer1.add_courses_attached('Fullstack Python')
 reviewer1.add_courses_attached('Системный аналитик')
 
@@ -172,7 +176,6 @@ student4.rate_the_lecture(lecturer3, 'Fullstack Python', 9)
 student4.rate_the_lecture(lecturer4, 'Fullstack Python', 8)
 student4.rate_the_lecture(lecturer4, 'Fullstack Python', 8)
 student4.rate_the_lecture(lecturer4, 'Fullstack Python', 10)
-
 
 reviewer1.rate_hw(student1, 'Системный аналитик', 5)
 reviewer1.rate_hw(student1, 'Системный аналитик', 2)
@@ -212,9 +215,20 @@ print(student3)
 print(student4)
 print(lecturer1)
 print(lecturer2)
+print(lecturer3)
+print(lecturer4)
 print(reviewer1)
 print(reviewer2)
 
+print(student1 > student2)
+print(student4 > student3)
+print(student3 < student2)
+print(student3 > student2)
+
+print(lecturer1 > lecturer2)
+print(lecturer4 > lecturer3)
+print(lecturer3 < lecturer2)
+print(lecturer3 > lecturer2)
 
 def awerage_rate_student(list_student, course):
     list_student_course = list(filter(lambda x: course in x.grades, list_student))
